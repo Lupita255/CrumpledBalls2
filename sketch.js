@@ -6,7 +6,11 @@ const Render = Matter.Render;
 var dustbinObj,groundObject
 var world;
 var paper;
- 
+var binImg;
+
+function preload(){
+   binImg = loadImage("images/dustbingreen.png");
+}
  
 function setup() {
    createCanvas(1600, 700);
@@ -17,8 +21,11 @@ function setup() {
    world = engine.world;
   
    groundObject=new ground(width/2,670,width,20);
+ 
    dustbinObj=new dustbin(1200,650);
+   dustbinObj.addImage(binImg);
    paper = new Paper(300,668,70);
+ 
  
    Engine.run(engine);
  }
