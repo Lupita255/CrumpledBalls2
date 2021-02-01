@@ -23,7 +23,7 @@ function setup() {
    groundObject=new ground(width/2,670,width,20);
  
    dustbinObj=new dustbin(1200,650);
-   dustbinObj.addImage(binImg);
+   
    paper = new Paper(300,668,70);
  
  
@@ -34,6 +34,8 @@ function setup() {
 function draw() {
  rectMode(CENTER);
  background(230);
+   
+  image(dustbinObj, 1200, 650, 100, 100);
  
  groundObject.display();
  dustbinObj.display();
