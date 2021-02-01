@@ -34,8 +34,6 @@ function setup() {
 function draw() {
  rectMode(CENTER);
  background(230);
-   
-  image(dustbinObj, 1200, 650, 100, 100);
  
  groundObject.display();
  dustbinObj.display();
