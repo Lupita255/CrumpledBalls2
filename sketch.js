@@ -9,7 +9,7 @@ var paper;
 var binImg;
 
 function preload(){
-   binImg = loadImage("images/dustbingreen.png");
+   binImg = loadImage("dustbingreen.png");
 }
  
 function setup() {
